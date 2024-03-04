@@ -23,9 +23,9 @@ fun JsonPlaceholder() {
         Surface(
             modifier = Modifier.fillMaxSize()
         ) {
-            val marsViewModel: JsonViewModel = viewModel()
+            val jsonViewModel: JsonViewModel = viewModel()
             HomeScreen(
-                jsonUiState = marsViewModel.jsonViewState,
+                jsonUiState = jsonViewModel.jsonViewState,
                 contentPadding = it,
             )
         }
